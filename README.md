@@ -54,11 +54,16 @@ Current state of features (from [here](https://twrp.me/faq/OfficialMaintainer.ht
 - [x] screenshot
 - [x] partition SD card
 
-# Building
+# Building (SHRP)
 ```bash
+repo init -u https://github.com/SHRP/manifest.git -b shrp-12.1 --depth=1
+# put this tree at device/xiaomi/begonia
 source build/envsetup.sh
 lunch twrp_begonia-eng
 mka recoveryimage -j$(nproc --all)
 ```
+
+The `pb_begonia.mk` product is left in place for PBRP builds; SHRP uses
+`twrp_begonia.mk` and `vendor/twrp/config/common.mk`.
 
 **Copyright (C) 2022 Team Win Recovery Project**

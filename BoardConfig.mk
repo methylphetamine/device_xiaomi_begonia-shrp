@@ -134,3 +134,20 @@ TARGET_USES_LOGD := true
 # PBRP specific build flags
 PB_DISABLE_DEFAULT_DM_VERITY := true
 PB_DISABLE_DEFAULT_TREBLE_COMP := true
+
+# SHRP configuration
+SHRP_PATH := device/xiaomi/begonia
+SHRP_MAINTAINER := methylphetamine
+SHRP_DEVICE_CODE := begonia
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A_Only
+SHRP_NOTCH := true
+SHRP_STATUSBAR_LEFT_PADDING := 40
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_EDL_MODE := 1
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_DARK := true
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
