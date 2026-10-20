@@ -19,7 +19,8 @@ license {
 
 cc_library {
     name: "libfscrypttwrp",
-    recovery_available: true,
+    // SHRP builds both the platform and recovery variants of libfs_mgr, so
+    // this module must be available to both (unlike TWRP's recovery-only copy).
     srcs: [
         "fscrypt.cpp",
     ],
